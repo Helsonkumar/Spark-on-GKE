@@ -31,6 +31,8 @@ public class SparkSampleGke {
         Dataset<Row> data=spark.createDataFrame(list,structType);
         data.show();
         System.out.println("This is the end of Code");
+        System.out.println("You took this time to run the job Helson..:)");
+
         spark.stop();
 
     }
