@@ -30,8 +30,8 @@ public class SparkSampleGke {
         StructType structType=DataTypes.createStructType(listOfStructField);
         Dataset<Row> data=spark.createDataFrame(list,structType);
         data.show();
-        System.out.println("This is the end of Code");
-        System.out.println("You took this time to run the job Helson..:)");
+        System.out.println("This  of is the endCode");
+        System.out.println("You took this time to run the job Helson buddy..:)");
 
         spark.stop();
 
