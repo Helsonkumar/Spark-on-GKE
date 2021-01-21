@@ -14,7 +14,7 @@ import java.util.List;
 
 public class SparkSampleGke {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
 
         SparkSession spark = SparkSession.builder().appName("SparkSampleGke").getOrCreate();
 
@@ -31,6 +31,7 @@ public class SparkSampleGke {
         Dataset<Row> data=spark.createDataFrame(list,structType);
         data.show();
         System.out.println("This  of is the endCode");
+        Thread.sleep(1000);
         System.out.println("You took this time to run the job Helson buddy..:)");
 
         spark.stop();
